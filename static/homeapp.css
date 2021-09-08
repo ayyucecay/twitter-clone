@@ -1,0 +1,67 @@
+.leftnavDiv{
+  weight:300px;
+  height: 900px;
+  padding-top: 10px;
+  margin-left: 10px;
+  font-size: 40px;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+}
+
+.leftnavDiv p{
+    font-weight: bold;
+}
+
+.leftnavDiv a{
+  font-size: 16px;
+}
+
+.leftnavDiv ul{
+  list-style-type:none;s
+}
+
+.leftnavDiv button{
+ background-color: transparent;
+ color: black;
+ padding: 5px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+.leftnavDiv button:hover{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tweetButton{
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.tweetButton:hover{
+  background-color: darkBlue;
+  color: white;
+}
+
+.profileButton{
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.profileButton{
+  background-color: lightGray;
+}

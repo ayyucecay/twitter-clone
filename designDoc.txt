@@ -1,0 +1,41 @@
+ Idea
+ -Twitter clone
+ Planning
+ -Home PAGE
+    1.bölüm
+    -anasayfa
+    -keşfet
+    -bildirimler
+    -mesajlar
+    -yer işaretleri
+    -listeler
+    -profil
+    -daha fazla
+    2.bölüm
+    -yeni tweet box
+    -feed
+    3.bölüm
+    -arama butonu
+    -gündem
+  -KEŞFET
+    2.bölüm
+    -keşfet sayfası
+  -BİLDİRİMLER
+    2.bölüm
+    -bildirimler
+      -tümü
+      -bahsedenler
+  -PROFİL
+    2.bölüm
+    -profil sayfası
+  -DAHA FAZLA
+    1.bölüm
+    -ayarlar sayfası
+ Analysis
+Main page en çok request alacak part. Sitede olması gereken bütün herşey
+gösterilmeli.
+
+ Design
+ Implementation
+ Testing and Integration
+ Maintanance
