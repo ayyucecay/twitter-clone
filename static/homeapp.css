@@ -1,17 +1,25 @@
 .leftnavDiv{
-  weight:300px;
+  width:300px;
   height: 900px;
-  padding-top: 10px;
   margin-left: 10px;
   font-size: 40px;
   position: fixed;
   top:0;
   bottom:0;
   left:0;
+  border-right: 2px solid gray;
 }
-
-.leftnavDiv p{
-    font-weight: bold;
+.logo{
+  width:60px;
+  height: 60px;
+  border-radius: 70px !important;
+  margin-left: 40px;
+}
+.logo:hover{
+  background-color: lightblue !important;
+}
+.logo i{
+  font-size: 45px;
 }
 
 .leftnavDiv a{
@@ -19,28 +27,30 @@
 }
 
 .leftnavDiv ul{
-  list-style-type:none;s
+  list-style-type:none;
 }
 
 .leftnavDiv button{
  background-color: transparent;
  color: black;
- padding: 5px;
+ padding: 10px 10px;
  text-align: center;
  text-decoration: none;
  display: inline-block;
  font-size: 16px;
  margin: 4px 2px;
  cursor: pointer;
+ border:none;
+ border-radius: 15px;
 }
 .leftnavDiv button:hover{
-  background-color: #4CAF50;
+  background-color: lightGray;
   color: white;
 }
 
 .tweetButton{
-  background-color: blue;
-  color: white;
+  background-color: blue !important;
+  color:white !important;
   padding: 5px;
   text-align: center;
   text-decoration: none;
@@ -49,19 +59,58 @@
   margin: 4px 2px;
   cursor: pointer;
   font-weight: bolder;
+  margin-left: 30px !important;
+
 }
 
 .tweetButton:hover{
-  background-color: darkBlue;
-  color: white;
+  background-color: darkBlue !important;
+  color: white !important;
 }
 
 .profileButton{
   background-color: transparent;
   padding: 5px;
   cursor: pointer;
+  margin-left: 30px !important;
+
 }
 
-.profileButton{
-  background-color: lightGray;
+.profileButton:hover{
+  background-color: lightGray !important;
+}
+
+.feed{
+  padding-top: 0px;
+  color:black;
+  margin : -10px 0px;
+  margin-left: 305px;
+  display: block;
+  border-right: 1px solid gray;
+  width: 700px;
+}
+.feed p{
+  font-weight: bolder;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+}
+.tweetBox{
+  width: 620px;
+  height: 100px;
+  border-bottom: 1px solid lightGray;
+  margin-left: 30px;
+}
+.tweetText{
+  width: 620px;
+  height: 100px;
+  border-bottom: 1px solid lightGray ;
+  padding top:5px;
+}
+
+.tweeted{
+  padding: 8px !important;
+  border-radius: 15px;
+  margin-left: 580px !important;
+  margin-top: 15px;
+
 }

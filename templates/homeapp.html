@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,24 +5,39 @@
   <title>Anasayfa/Twitter</title>
   <link rel="stylesheet" href="../static/homeapp.css">
   <meta charset="utf-8">
+
+  <!-- FONT AWSOME -->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 
 <div class="leftnavDiv">
+
   <ul>
-      <p >Main Page</p>
-      <li><button>Discover</button></li>
-      <li><button>Notifications</button></li>
-      <li><button>Messages</button></li>
-      <li><button>Profile</button></li>
-      <li><button>Much more</button></li>
-    </ul>
+    <li><button class="logo"><i class="fa fa-twitter "></i></button></li>
+    <li><button style="font-weight: bold"><i class="fa fa-home"></i> Main Page</button></li>
+    <li><button><i class="fa fa-hashtag"></i> Discover</button></li>
+    <li><button><i class="fa fa-bell"></i> Notifications</button></li>
+    <li><button><i class="fa fa-envelope"></i> Messages</button></li>
+    <li><button><i class="fa fa-user"></i> Profile</button></li>
+    <li><button><i class="fa fa-ellipsis-h"></i> More</button></li>
+  </ul>
 
-<button class="tweetButton" onclick="tweet()">Tweetle</button>
+  <button class="tweetButton">Tweetle</button>
 
-<form action="https://www.w3docs.com/">
-         <button class="profileButton">profile</button>
-      </form>
+  <form action="https://www.w3docs.com/">
+    <button class="profileButton">profile</button>
+  </form>
 
+</div>
+
+<div class="feed">
+  <p>Home</p>
+  <form class="tweetBox">
+    <input type="text" class="tweetText" name="fname"><br><br>
+  </form>
+  <button class="tweetButton tweeted">Tweet</button>
 </div>
 
 
