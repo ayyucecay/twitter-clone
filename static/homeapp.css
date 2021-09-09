@@ -46,6 +46,7 @@
 .leftnavDiv button:hover{
   background-color: lightGray;
   color: white;
+  transition: 0.2s;
 }
 
 .tweetButton{
@@ -60,12 +61,12 @@
   cursor: pointer;
   font-weight: bolder;
   margin-left: 30px !important;
-
 }
 
 .tweetButton:hover{
   background-color: darkBlue !important;
   color: white !important;
+  transition: 0.2s;
 }
 
 .profileButton{
@@ -78,6 +79,7 @@
 
 .profileButton:hover{
   background-color: lightGray !important;
+  transition: 0.2s;
 }
 
 .feed{
@@ -88,6 +90,9 @@
   display: block;
   border-right: 1px solid gray;
   width: 700px;
+  height: 900px;
+  position: fixed;
+  overflow-y: scroll;
 }
 .feed p{
   font-weight: bolder;
@@ -97,14 +102,21 @@
 .tweetBox{
   width: 620px;
   height: 100px;
-  border-bottom: 1px solid lightGray;
   margin-left: 30px;
+
+
 }
 .tweetText{
   width: 620px;
   height: 100px;
   border-bottom: 1px solid lightGray ;
   padding top:5px;
+  border:1px solid transparent;
+  border-bottom: 1px solid lightGray;
+}
+
+.tweetText:focus{
+  outline: none;
 }
 
 .tweeted{
@@ -112,5 +124,63 @@
   border-radius: 15px;
   margin-left: 580px !important;
   margin-top: 15px;
+}
 
+.right-nav-div{
+  width: 280px;
+  height: 900px;
+  margin-left: 1010px;
+  position: fixed;
+}
+
+.searchButton{
+  background-color: lightGray;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 20px;
+  cursor: pointer;
+  border:none;
+  border-radius: 20px;
+  width:280px;
+  height: 20px;
+}
+
+.searchText{
+  width: 280px;
+  height: 20px;
+  border-radius: 20px;
+  padding top:5px;
+  background-color: transparent;
+  border:1px solid transparent;
+
+}
+
+.searchText:focus{
+  outline:none;
+}
+
+.topics-follow{
+  border:1px solid transparent;
+  background-color: lightGray;
+  width: 300px;
+  height: 400px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.topics-follow p{
+  font-weight: bolder;
+  font-size: 25px;
+  border-bottom: 1px solid Gray;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 0px !important;
+}
+
+.topics-follow ul{
+  list-style-type:none;
 }
