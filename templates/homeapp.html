@@ -12,52 +12,67 @@
 
 </head>
 
-<div class="leftnavDiv">
-
-  <ul>
-    <li><button class="logo"><i class="fa fa-twitter "></i></button></li>
-    <li><button style="font-weight: bold"><i class="fa fa-home"></i> Main Page</button></li>
-    <li><button><i class="fa fa-hashtag"></i> Discover</button></li>
-    <li><button><i class="fa fa-bell"></i> Notifications</button></li>
-    <li><button><i class="fa fa-envelope"></i> Messages</button></li>
-    <li><button><i class="fa fa-user"></i> Profile</button></li>
-    <li><button><i class="fa fa-ellipsis-h"></i> More</button></li>
-  </ul>
-
-  <button class="tweetButton">Tweetle</button>
-
-  <form action="https://www.w3docs.com/">
-    <button class="profileButton">profile</button>
-  </form>
-
-</div>
-
-<div class="feed">
-  <p>Home</p>
-  <form class="tweetBox">
-    <input type="text" placeholder="What's happening?" class="tweetText" name="tweet"><br><br>
-  </form>
-  <button class="tweetButton tweeted">Tweet</button>
-</div>
-
-
-<div class="right-nav-div">
-  <form class="searchButton">
-    <input type="text" placeholder="Search Awitter" class="searchText" name="search"><br><br>
-  </form>
-
-
-<!--topic table--> 
-  <div class="topics-follow">
-    <p>Topics Follow</p>
+<body class="main-page-body">
+  <!-- Left navigation div class -->
+  <div class="leftnavDiv">
+    <!-- buttons on the right that provide accessibility to the desired places  -->
     <ul>
-      <li></li>
+      <li><button class="logo"><i class="fa fa-twitter "></i></button></li>
+      <li><button style="font-weight: bold"><i class="fa fa-home"></i> Main Page</button></li>
+      <li><button><i class="fa fa-hashtag"></i> Discover</button></li>
+      <li><button><i class="fa fa-bell"></i> Notifications</button></li>
+      <li><button><i class="fa fa-envelope"></i> Messages</button></li>
+      <li><button><i class="fa fa-user"></i> Profile</button></li>
+      <li><button><i class="fa fa-ellipsis-h"></i> More</button></li>
+      <li><button class="tweetButton">Tweetle</button></li>
     </ul>
+    <!-- button for go to profile -->
+    <form action="https://www.w3docs.com/">
+      <button class="profileButton">profile</button>
+    </form>
+  </div>
+
+  <!-- feed and newly tweeted div -->
+  <div class="feed">
+    <p>Home</p>
+    <!-- new tweet box form -->
+    <form class="tweetBox">
+      <input type="text" placeholder="What's happening?" class="tweetText" name="tweet"><br><br>
+    </form>
+    <!-- tweet button -->
+    <button class="tweetButton tweeted">Tweet</button>
+
+    <div>
+      <div class="one-tweet-box">
+        <img src="../branding/twitterSymbol.png" class="imgStyle">
+        <h1>Thomas Edison @edison</h1>
+        <p>June 22, 2021</p>
+      </div>
+
+    </div>
+
+
 
   </div>
 
-</div>
+  <!-- search and topics div-->
+  <div class="right-nav-div">
+    <form class="searchButton">
+      <input type="text" placeholder="Search Awitter" class="searchText" name="search"><br><br>
+    </form>
 
 
+    <!--topic table-->
+    <div class="topics-follow">
+      <p>Topics to Follow</p>
+      <ul>
+        <li></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</body>
 
 </html>
