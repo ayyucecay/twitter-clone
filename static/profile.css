@@ -10,7 +10,7 @@
   color:black;
   margin : -10px 0px;
   margin-left: 260px;
-  display: block;
+  display: inline;
   border-right: 1px solid gray;
   width: 700px;
   height: 900px;
@@ -23,7 +23,7 @@
   margin-left: 10px;
 }
 
-.profile p{
+.tweet-count{
   font-size: 15px;
   font-weight: lighter;
   padding-left: 10px;
@@ -54,12 +54,40 @@
   font-size: 15px;
   width: 120px;
   height: 30px;
-  padding: 5px !important;
   font-weight: bolder;
   border-radius: 10px;
   border:1px solid #008ae6;
   color: #008ae6;
   background-color: white;
-  margin-left: 550px;
   display:inline;
+  position: absolute;
+  top: 0;
+  right:0;
+}
+
+.profile-div{
+  position:relative;
+}
+
+.profile-name{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.profile-inf{
+  font-weight:lighter;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+.tweet-fleed-button{
+  font-size: 15px;
+  width: 120px;
+  height: 30px;
+  font-weight: bolder;
+  border:1px solid transparent;
+  border-bottom: 2px solid #008ae6;
+  color: #008ae6;
+  background-color: white;
 }
