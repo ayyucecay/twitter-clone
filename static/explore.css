@@ -1,0 +1,17 @@
+.explore{
+  padding-top: 0px;
+  color:black;
+  margin : -10px 0px;
+  margin-left: 260px;
+  display: block;
+  border-right: 1px solid gray;
+  width: 700px;
+  height: 900px;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.explore h1{
+  font-size: 18px;
+  padding-left: 5px;
+}
