@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,9 +35,9 @@
     <h1>Elon Musk</h1>
     <p class="tweet-count">11 Tweets</p>
 
-    <img src="../branding/background.jpg" class="banner-ımg">
+    <img src="{% static 'branding/background.jpg' %}" class="banner-ımg">
     <div class="profile-div">
-      <img src="../branding/background.jpg" class="profileImg">
+      <img src="{% static 'branding/background.jpg' %}" class="profileImg">
       <button class="edit-profile-button">Edit Profile</button>
       <p class="profile-name">Elon Musk</p>
       <p class="tweet-count" style="border:none">@musk</p>
@@ -54,6 +55,7 @@
 
   <!-- search and topics div-->
   <div class="right-nav-div">
+    
     <form class="searchButton">
       <input type="text" placeholder="Search Awitter" class="searchText" name="search"><br><br>
     </form>
@@ -61,13 +63,11 @@
     <!--topic table-->
     <div class="topics-follow">
       <p>Topics to Follow</p>
-
       <a href="#">hh</a>
       <a href="#">aa</a>
       <a href="#">bb</a>
       <a href="#">vv</a>
       <a href="#">dd</a>
-
     </div>
 
   </div>
