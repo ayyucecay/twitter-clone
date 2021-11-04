@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Anasayfa/Twitter</title>
-  <link rel="stylesheet" href="../static/homeapp.css">
+  <link rel="stylesheet" href="{% static 'homeapp.css' %}">
   <meta charset="utf-8">
 
   <!-- FONT AWSOME -->
@@ -38,63 +39,17 @@
     <button class="tweetButton tweeted">Tweet</button>
 
     <!-- tweet box feed -->
+    {% for tweet in all_tweets %}
     <div class="one-tweet-box">
       <img src="../branding/twitterSymbol.png" class="imgStyle">
-      <h1>Thomas Edison @edison</h1>
-      <p>June 22, 2021</p>
-      <p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+      <h1>{{ tweet.profile_name }} {{ tweet.profile_hashtag }}</h1>
+      <p>{{ tweet.creation_date }}</p>
+      <p class="tweet-text">{{ tweet.tweet_content }}<br>
       </p>
       <button class="commentButton"><i class="fa fa-comment"></i></button>
       <button class="commentButton" style="margin-left: 160px;"><i class="fa fa-heart"></i></button>
     </div>
-    <div class="one-tweet-box">
-      <img src="../branding/twitterSymbol.png" class="imgStyle">
-      <h1>Thomas Edison @edison</h1>
-      <p>June 22, 2021</p>
-      <p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-      </p>
-      <button class="commentButton"><i class="fa fa-comment"></i></button>
-      <button class="commentButton" style="margin-left: 160px;"><i class="fa fa-heart"></i></button>
-    </div>
-    <div class="one-tweet-box">
-      <img src="../branding/twitterSymbol.png" class="imgStyle">
-      <h1>Thomas Edison @edison</h1>
-      <p>June 22, 2021</p>
-      <p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-      </p>
-      <button class="commentButton"><i class="fa fa-comment"></i></button>
-      <button class="commentButton" style="margin-left: 160px;"><i class="fa fa-heart"></i></button>
-    </div>
-    <div class="one-tweet-box">
-      <img src="../branding/twitterSymbol.png" class="imgStyle">
-      <h1>Thomas Edison @edison</h1>
-      <p>June 22, 2021</p>
-      <p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-      </p>
-      <button class="commentButton"><i class="fa fa-comment"></i></button>
-      <button class="commentButton" style="margin-left: 160px;"><i class="fa fa-heart"></i></button>
-    </div>
-    <div class="one-tweet-box">
-      <img src="../branding/twitterSymbol.png" class="imgStyle">
-      <h1>Thomas Edison @edison</h1>
-      <p>June 22, 2021</p>
-      <p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-      </p>
-      <button class="commentButton"><i class="fa fa-comment"></i></button>
-      <button class="commentButton" style="margin-left: 160px;"><i class="fa fa-heart"></i></button>
-    </div>
-  </div>
-
+    {% endfor  %}
 
   <!-- search and topics div-->
   <div class="right-nav-div">
@@ -103,17 +58,12 @@
     </form>
 
     <!--topic table-->
+    {% for topic in topics %}
     <div class="topics-follow">
       <p>Topics to Follow</p>
-
-      <a href="#">hh</a>
-      <a href="#">aa</a>
-      <a href="#">bb</a>
-      <a href="#">vv</a>
-      <a href="#">dd</a>
-
+      <a href="#">{{ topic.topic_name }}</a>
     </div>
-
+{% endfor  %}
   </div>
 
 </body>

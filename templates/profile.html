@@ -4,8 +4,8 @@
 
 <head>
   <title>Awitter</title>
-  <link rel="stylesheet" href="../static/homeapp.css">
-  <link rel="stylesheet" href="../static/profile.css">
+  <link rel="stylesheet" href="{% static 'homeapp.css' %}">
+  <link rel="stylesheet" href="{% static 'profile.css' %}">
   <meta charset="utf-8">
 
   <!-- FONT AWSOME -->
@@ -31,31 +31,31 @@
   </div>
 
   <!-- feed and newly tweeted div -->
+
   <div class="profile">
-    <h1>Elon Musk</h1>
-    <p class="tweet-count">11 Tweets</p>
+    <h1>{{ profile_info.profile_name }}</h1>
+    <p class="tweet-count">{{ profile_info.tweet_number }} Tweets</p>
 
     <img src="{% static 'branding/background.jpg' %}" class="banner-ımg">
     <div class="profile-div">
       <img src="{% static 'branding/background.jpg' %}" class="profileImg">
       <button class="edit-profile-button">Edit Profile</button>
-      <p class="profile-name">Elon Musk</p>
-      <p class="tweet-count" style="border:none">@musk</p>
-      <p class="profile-inf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p class="tweet-count" style="border:none">June 22, 2021</p>
-      <p class="tweet-count" style="border:none"><b>2</b> Following <b>3</b> Followers </p>
+      <p class="profile-name">{{ profile_info.profile_name }}</p>
+      <p class="tweet-count" style="border:none">{{ profile_info.profile_hashtag }}</p>
+      <p class="profile-inf">{{ profile_info.bio }}</p>
+      <p class="tweet-count" style="border:none">{{ profile_info.creation_date }}</p>
+      <p class="tweet-count" style="border:none"><b>{{ profile_info.following }}</b> Following <b>{{ profile_info.followers }}</b> Followers </p>
       <button class="tweet-fleed-button">Tweets</button>
 
       <div class="clear"></div>
+      
     </div>
   </div>
 
 
   <!-- search and topics div-->
   <div class="right-nav-div">
-    
+
     <form class="searchButton">
       <input type="text" placeholder="Search Awitter" class="searchText" name="search"><br><br>
     </form>

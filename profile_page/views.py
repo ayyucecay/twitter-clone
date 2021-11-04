@@ -9,11 +9,16 @@ from django.core.exceptions import ObjectDoesNotExist
 # My Module Imports
 from .models import Profile, Tweet
 
-def profile(request):
+def profile(request, id):
     """
     In this view the users can see the profile page of the website which
     holds a profile information and posted tweet
     """
+    try:
+        profile_info = Profile.objects.get(id=id)
+    except ObjectDoesNotExist:
+        profile_info = None
+
 
     # Getting all of the tweet to list and display them
     try:
@@ -23,7 +28,10 @@ def profile(request):
 
 
 
+
+
     data = {
+        'profile_info': profile_info,
         'all_tweets': all_tweets,
     }
 
