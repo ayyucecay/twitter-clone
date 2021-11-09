@@ -11,7 +11,12 @@ class Profile(models.Model):
     tweet_content = models.CharField(max_length=200)
     tweet_number = models.IntegerField()
     bio = models.CharField(max_length=200, null=True)
-
+    profile_photo = models.ImageField(
+        upload_to="profile_photo/", blank=True, null=True
+    )
+    profile_banner_photo = models.ImageField(
+        upload_to="profile_photo/", blank=True, null=True
+    )
 
     def __str__(self):
         return self.profile_name

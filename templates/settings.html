@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Awitter</title>
-  <link rel="stylesheet" href="../static/homeapp.css">
-  <link rel="stylesheet" href="../static/settings.css">
+  <link rel="stylesheet" href="{% static 'homeapp.css' %}">
+  <link rel="stylesheet" href="{% static 'settings.css' %}">
   <meta charset="utf-8">
 
   <!-- FONT AWSOME -->
@@ -39,18 +40,18 @@
     <div class="profile-settings">
       <h1>Profile Settings</h1>
       <p>Profile Photo</p>
-      <div class="profile-photo-settings">
-      </div>
+      <input class="profile-photo-settings" name="profie_photo">
+    </input>
       <p>Banner Photo</p>
-      <div class="profile-photo-settings">
-      </div>
+      <input class="profile-photo-settings" name="banner_photo">
+    </input>
       <p>Full Name</p>
-      <div class="profile-photo-settings">
-      </div>
+      <input class="profile-photo-settings" name="full_name">
+    </input>
       <p>Bio</p>
-      <div class="profile-bio-settings">
-
-      </div>
+      <input class="profile-photo-settings" name="bio">
+    </input>
+    <input type="submit" name="profile_settings_submit" value="Submit">
     </div>
   </div>
 
